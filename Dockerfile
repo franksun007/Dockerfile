@@ -5,7 +5,7 @@ RUN echo "Update Repo"
 RUN apt-get update
 
 RUN echo "Install essential"
-RUN apt-get install -y build-essential python fish vim emacs python2.7-dev openssl openssl-dev
+RUN apt-get install -y build-essential python fish vim emacs python2.7-dev openssl libssl-dev
 
 RUN echo "Install gperftools"
 RUN apt-get install -y libgoogle-perftools-dev
