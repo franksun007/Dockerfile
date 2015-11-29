@@ -14,3 +14,11 @@ RUN echo "Install Caffe"
 RUN apt-get install -y libgflags-dev libgoogle-glog-dev liblmdb-dev
 RUN apt-get install -y libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler
 RUN apt-get install -y --no-install-recommends libboost-all-dev
+RUN apt-get install -y python-pip
+
+RUN echo "Install tensorflow"
+RUN pip install https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.5.0-cp27-none-linux_x86_64.whl
+
+RUN echo "Install git, ssh"
+RUN apt-get install -y git ssh
+
