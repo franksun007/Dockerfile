@@ -22,3 +22,17 @@ RUN pip install https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0
 RUN echo "Install git, ssh"
 RUN apt-get install -y git ssh
 
+RUN echo "Install yaml"
+RUN apt-get install -y python-yaml
+
+RUN echo "Install ATLAS"
+RUN apt-get install -y libatlas-base-dev
+
+RUN echo "Install cmake"
+RUN apt-get install -y cmake
+
+RUN echo "SOME PACKAGE..." 
+RUN apt-get install -y python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
+
+RUN echo "INSTALL CLANG"
+RUN apt-get install -y clang
